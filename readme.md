@@ -1,7 +1,7 @@
-# OpenTTS Custom Component for Home Assistant
+# OpenTTS Custom "legacy" Component for Home Assistant
 
 ## Description
-This is a custom component for integrating OpenTTS with Home Assistant, allowing you to generate speech using various text-to-speech (TTS) engines supported by OpenTTS.
+This is a custom "legacy" component for integrating OpenTTS with Home Assistant, allowing you to generate speech using various text-to-speech (TTS) engines supported by OpenTTS.
 
 ## Features
 - Full support for SSML (Speech Synthesis Markup Language), allowing for advanced speech control and formatting
@@ -16,7 +16,7 @@ This is a custom component for integrating OpenTTS with Home Assistant, allowing
      - Running in docker is the simplest method
      - I used this setup running as a deamon (* The :all option gives you support for all languages)
           ```bash
-          docker run -dit --restart unless-stopped --name="opentts"  -p 5500:5500 synesthesiam/opentts:all
+          docker run -dit --restart unless-stopped --name="opentts" -p 5500:5500 synesthesiam/opentts:all
           ```
 3. **Required Dependencies** – The component requires `requests` for handling HTTP requests.
 
@@ -48,7 +48,7 @@ tts:
 ```
 
 ### Supported Languages
-This integration supports multiple languages via OpenTTS. Below are some of the available options:
+This integration supports multiple languages via OpenTTS instead of the marytts option thats very limited. Below are some of the available options:
 
 ```yaml
 SUPPORTED_LANGUAGES = [
