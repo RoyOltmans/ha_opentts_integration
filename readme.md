@@ -3,8 +3,10 @@
 ## Description
 This is a custom "legacy" component for integrating OpenTTS with Home Assistant, allowing you to generate speech using various text-to-speech (TTS) engines supported by OpenTTS.
 
+The main goal for me was, marytts was working for text but did not support SSML (as far as opentts SSML supports). I combined the working interaction with OpenTTS and build a opentts integration. I know the opentts repo of synesthesiam is not maintained that much but it still works and delivers a open and local tts solution with SSML.
+
 ## Features
-- Full support for SSML (Speech Synthesis Markup Language), allowing for advanced speech control and formatting
+- Partial but working support for SSML (Speech Synthesis Markup Language), allowing for advanced speech control and formatting
 - Supports multiple TTS engines via OpenTTS
 - Customizable voices, languages, and audio formats
 - Integration with Home Assistant's TTS service
