@@ -24,11 +24,11 @@ This is a custom "legacy" component for integrating OpenTTS with Home Assistant,
 ### Manual Installation
 1. Navigate to your Home Assistant configuration directory:
    ```sh
-   cd config/custom_components
+   cd config
    ```
 2. Create a new folder for OpenTTS:
    ```sh
-   mkdir opentts
+   copy opentts in the custom_components folder
    ```
 3. Copy the following files into the `opentts` directory:
    - `__init__.py`
