@@ -1,9 +1,0 @@
-{
-  "domain": "opentts",
-  "name": "OpenTTS",
-  "documentation": "https://github.com/RoyOltmans/ha_opentts_integration",
-  "dependencies": [],
-  "codeowners": ["@royoltmans"],
-  "requirements": ["requests"],
-  "version": "1.0.0"
-}
