@@ -13,6 +13,11 @@ This is a custom component for integrating OpenTTS with Home Assistant, allowing
 ## Prerequisites
 1. **Home Assistant** – Ensure you have a running instance of Home Assistant.
 2. **OpenTTS Server** – Install and configure OpenTTS. You can find more details at [OpenTTS GitHub](https://github.com/synesthesiam/opentts).
+     - Running in docker is the simplest method
+     - I used this setup running as a deamon (* The :all option gives you support for all languages)
+          ```bash
+          docker run -dit --restart unless-stopped --name="opentts"  -p 5500:5500 synesthesiam/opentts:all
+          ```
 3. **Required Dependencies** – The component requires `requests` for handling HTTP requests.
 
 ## Installation
